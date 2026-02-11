@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <h1>Video Projects</h1>
+
+  {% for project in projects %}
+
+  <h2>{{ project.title }}</h2>
+
+
+  <p>{{ project.description }}</p>
+
+  {% if project.video_file_land %}
+  <div class="cinematic-box">
+    <video controls>
+      <source src="{{ project.video_file_land.url}}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  {% elif project.video_file %}
+  <div class="reel-box">
+    <video controls>
+      <source src="{{ project.video_file.url}}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  {% endif %}
+
+
+  <hr>
+  {% empty %}
+  <p>No projects yet.</p>
+  {% endfor %}
+
+
+
+  <h1 class="text-6xl text-red-500 font-bold">
+    TAILWIND TEST
+  </h1>
+
+
+  <div class="bg-red-500 text-white text-5xl p-10">
+    TAILWIND TEST
+  </div>
+
+  <script></script>
+</body>
+
+</html>

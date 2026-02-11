@@ -1,0 +1,564 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed-Althaif | Creative | Video Editing | Portfolio</title>
+  <meta name="description"
+    content="Editing stories that inspire audiences. Transforming raw footage into cinematic videos for creators, brands and storytellers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static 'css/move.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-logo">
+
+    </div>
+
+    <div class="navbar-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About us</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+    </div>
+
+    <a href="#contact" class="btn-primary" style="display:none" id="nav-cta-desktop">
+      Contact us
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7" />
+        <polyline points="7 7 17 7 17 17" />
+      </svg>
+    </a>
+
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="btn-primary" style="width:fit-content">
+        Contact us
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7" />
+          <polyline points="7 7 17 7 17 17" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="lava-particles"></div>
+    <div class="hero-bg">
+      <img src="{% static 'images/ChatGPT Image Feb 9, 2026, 12_38_17 PM.png' %}" alt="">
+    </div>
+
+    <div class="hero-content">
+      <h1>Turning Moments<br>Into Timeless Films</h1>
+
+      <p>
+        Transforming raw footage into cinematic videos for creators,
+        brands and wedding events.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn-hero">
+          Get a Free Strategy Call
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="hero-showcase">
+
+    <div class="hero-mockup">
+      <div class="mockup-frame">
+        <img src="{% static 'images/download (61).jpg' %}" alt="">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="logo-bar">
+    <div class="logo-bar-inner">
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>PRIEMER PRO</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>AFTER EFFECTS</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>NUKE</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>DAVINCI RESOLVE</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>FINAL CUT</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 20 20">
+          <rect x="2" y="2" width="16" height="16" rx="3" />
+        </svg>
+        <span>BLENDER</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about reveal" id="about">
+    <div class="about-inner ">
+      <div class="about-image reveal">
+        <img src="{% static 'images/thaif.jpg' %}" alt="Video editor working at desk" />
+      </div>
+      <div class="about-text reveal">
+        <h2>Turning Raw Footage Into Pure Art</h2>
+        <p> I am a self-taught video editor who began my editing journey in 2023, driven by a deep passion for visual
+          storytelling. What started as curiosity quickly grew into a dedicated craft, allowing me to transform raw
+          footage into compelling cinematic experiences.
+
+          I work with industry-standard tools including Adobe Premiere Pro, After Effects, Nuke, and DaVinci Resolve,
+          constantly refining my skills to deliver high-quality, engaging content that connects with audiences.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--Experience-->
+
+  <section class="experience reveal" id="experience">
+    <div class="experience-inner">
+
+      <h2>Creative Journey</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <span class="year">2023</span>
+          <h3>The Beginning</h3>
+          <p>Started my journey as a self-taught video editor, focusing on cinematic pacing.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2024</span>
+          <h3>Growth & Exploration</h3>
+          <p>Expanded into short-form content, reels, and brand videos while sharpening color grading skills.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2025</span>
+          <h3>Professional Editing</h3>
+          <p> Become a Video editor
+            and
+            Videographer worked for
+
+            A2Z event management
+
+            landeals realestate
+
+            Luminous wedding company
+
+            Vividstories
+
+            blurmowedding
+
+            pixicwedding
+
+            goldenhourproduction
+
+            cosmic wedding cinemax</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2026</span>
+          <h3>Progressing phase</h3>
+          <p>Helping creators and businesses transform raw footage into engaging visual stories.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- FEATURED WORK -->
+  <section class="featured reveal" id="work">
+    <div class="featured-inner">
+      <div class="featured-header">
+        <div>
+          <h2>Featured Work</h2>
+          <p>A glimpse into our recent editing work and collaborations</p>
+        </div>
+        <div class="featured-tabs">
+          <button class="tab-btn active" data-tab="short">Reels</button>
+          <button class="tab-btn" data-tab="long">Cinematic & Wedding Cuts</button>
+          <button class="tab-btn" data-tab="ads">Motion Graphics & Ads</button>
+
+        </div>
+      </div>
+
+      <div class="work-grid-wrapper">
+
+        <div class="work-grid" id="work-grid">
+
+          {% for project in projects %}
+          <div class="work-card {{ project.ratio_class }}" data-category="{{ project.category }}">
+
+            <div class="video-wrapper">
+              {% if project.video_file %}
+              <video class="work-video" controls muted playsinline preload="metadata">
+                <source src="{{ project.video_file.url }}" type="video/mp4">
+              </video>
+              {% else %}
+              <img src="{% static 'images/work-1.jpg' %}" alt="{{ project.title }}">
+              {% endif %}
+
+              <div class="overlay"></div>
+              <div class="video-title">{{ project.title }}</div>
+
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+
+      <div class="carousel-nav">
+        <button class="nav-btn outline" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+        </button>
+        <button class="nav-btn filled" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials reveal">
+    <div class="testimonials-inner">
+      <div class="testimonials-header">
+        <h2>Client Testimonials</h2>
+        <p>What our clients say about working with us</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="{% static 'images/download1.png' %}" alt="" />
+
+          </div>
+          <div class="testimonial-content">
+            <div class="stars">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="quote"> muhammed al thaif is a trusted
+              friend and colleague. Whenever I
+              need a videoeditor for any project,
+              he's my go-to. Work with him is fuss-
+              free, efficient, and highly detailed.</p>
+            <p class="author">Vishnuajay</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="{% static 'images/download1.png' %}" alt="" />
+
+          </div>
+          <div class="testimonial-content">
+            <div class="stars">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="quote">
+              Working with this team transformed our brand campaign. Their attention to detail and creative vision
+              exceeded all expectations. Every frame was perfection
+
+            </p>
+            <p class="author">Ashik s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services reveal" id="services">
+    <div class="services-inner">
+      <div class="services-header">
+        <div>
+          <h2>Our Services</h2>
+          <p>Comprehensive video production solutions tailored to your goals</p>
+        </div>
+        <a href="#contact" class="btn-primary">
+          Book a Call
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+            <polyline points="17 2 12 7 7 2" />
+          </svg>
+          <h3>Wedding Cuts</h3>
+          <p>Transforming wedding moments into cinematic memories, capturing every emotion with elegant editing so your
+            special day can be relived forever.
+
+          </p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+            <line x1="12" y1="18" x2="12.01" y2="18" />
+          </svg>
+          <h3>Shorts &amp; Reels</h3>
+          <p>Create viral-worthy vertical content optimized for TikTok, Instagram Reels, and YouTube Shorts that
+            maximizes reach and conversion.</p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+          </svg>
+          <h3>Motion Graphics</h3>
+          <p>Elevate your brand with stunning animations, dynamic text, and visual effects that make your content stand
+            out from the competition.</p>
+        </div>
+        <div class="service-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+          </svg>
+          <h3>Commercial Ads</h3>
+          <p>Produce high-converting advertisements that communicate your message clearly and inspire action from your
+            target audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process reveal">
+    <div class="process-inner">
+      <div class="process-step highlight" style="--offset:0px;">
+        <div class="step-line"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 18h6" />
+            <path d="M10 22h4" />
+            <path
+              d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14" />
+          </svg>
+        </div>
+        <div class="step-text">
+          <h3>Discover &amp; Strategy</h3>
+          <p>Understanding your goals, audience, and vision to set a clear direction for the edit.</p>
+        </div>
+      </div>
+
+      <div class="process-step" style="--offset:80px;">
+        <div class="step-line"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+          </svg>
+        </div>
+        <div class="step-text">
+          <h3>Creative Production</h3>
+          <p>Transforming raw footage into a polished, engaging video through clean cuts and storytelling.</p>
+        </div>
+      </div>
+
+      <div class="process-step" style="--offset:160px;">
+        <div class="step-line"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+        </div>
+        <div class="step-text">
+          <h3>Review &amp; Revisions</h3>
+          <p>Sharing previews, gathering feedback, and refining the edit for the best result.</p>
+        </div>
+      </div>
+
+      <div class="process-step" style="--offset:240px;">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          </svg>
+        </div>
+        <div class="step-text">
+          <h3>Final Delivery</h3>
+          <p>Delivering the final video in ready-to-publish formats, on time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="waveform" id="waveform"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-left">
+        <h2>Let’s Work Together</h2>
+        <p>
+          Have a project in mind? Send a message and I’ll get back within 24 hours.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> muhammedalthaif28@gmail.com</p>
+          <p><strong>Phone:</strong>9645486906, 9895273479 </p>
+          <p><strong>Instagram:</strong>
+            <a href="https://instagram.com/mhdalthaaaif" target="_blank">
+              @mhdalthaaaif
+            </a>
+          </p>
+          <p>Check our instagram for remaining Works</p>
+        </div>
+      </div>
+
+      <form method="POST" class="contact-form">
+        {% csrf_token %}
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+        <button type="submit" class="btn-primary">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+
+    <p class="desc">Transforming raw footage into cinematic videos for creators, brands and storytellers.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+    </div>
+    <p class="copyright">Thanks for visiting. Have a great day.</p>
+  </footer>
+
+
+
+
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/mm.js' %}"></script>
+
+
+</body>
+
+</html>
