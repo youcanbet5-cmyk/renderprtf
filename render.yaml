@@ -2,6 +2,6 @@ services:
   - type: web
     name: video-editing-portfolio
     plan: free
-    buildCommand: bash build.sh
-    startCommand: gunicorn prtf.wsgi:application
-    runtime: python
+    buildCommand: './build.sh'
+    startCommand: 'python -m gunicorn prtf.asgi:application -k uvicorn.workers.UvicornWorker'
+    runtime: python                             
